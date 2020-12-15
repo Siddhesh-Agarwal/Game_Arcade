@@ -449,13 +449,9 @@ def Play_Space_Battle():
     window1.title("SPACE BATTLE")
     window1.config(bg='gray19', border=5)
 
-    # Play Button
-    PlayButton = Button(window1, btn_params, text="Play", command=play)
-    PlayButton.pack()
-
-    # About Button
-    AboutButton = Button(window1, btn_params, text="About", command=about)
-    AboutButton.pack()
+    # Play/About Buttons
+    PlayButton = Button(window1, btn_params, text="Play", command=play).pack()
+    AboutButton = Button(window1, btn_params, text="About", command=about).pack()
 
     # Keeps Window Open
     window1.mainloop()
