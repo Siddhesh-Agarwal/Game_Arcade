@@ -13,7 +13,7 @@ def Play_Snake_Game():
         # Set Up Screen
         window = turtle.Screen()
         window.title("Snake Game")
-        window.bgcolor('green')
+        window.bgcolor('forest green')
         window.setup(width=600, height=700)
         window.tracer(0)
 
@@ -30,7 +30,7 @@ def Play_Snake_Game():
         food = turtle.Turtle()
         food.speed(0)
         food.shape('circle')
-        food.color('red')
+        food.color('red2')
         food.penup()
         food.goto(0, 100)
 
@@ -62,17 +62,11 @@ def Play_Snake_Game():
         border_2.goto(300, 0)
         border_2.clone().goto(-300, 0)
 
-        # Snake Body
+        # Snake Body, Delay , Score, Loop Counter
         segments = []
-
-        # Delay
-        delay1 = 0.1  # for slowing while loop
-
-        # Score
+        delay1 = 0.1
         score = 0
         high_score = 0
-
-        # Loop Counter
         count = 0
 
         # Change In Coordinates
@@ -226,9 +220,6 @@ def Play_Snake_Game():
             # Slowing down speed of while loop
             sleep(delay1)
 
-        # To Keep The Screen Open
-        window.mainloop()
-
     btn_params = {
         'padx': 16,
         'pady': 1,
@@ -264,8 +255,6 @@ def Play_Snake_Game():
         The snake can be controlled using the arrow keys(Up key, Right key, Down key and Left key)
         
         Developed by     : Siddhesh Agarwal
-        Contact (e-mail) : siddhesh.agarwal@gmail.com
-        Repository link  : https://github.com/Siddhesh-Agarwal/Snake-game
         '''
 
         window1.destroy()
@@ -276,26 +265,27 @@ def Play_Snake_Game():
         
         screen = tk.Text(about, height=30, width=120)
         screen.pack()
+        screen.config(bg='forest green', borderwidth=20, border=20)
         screen.insert(tk.END, text)
 
         BackButton = tk.Button(about, btn_params, text="← Back", command=helper)
+        BackButton.config(bg='firebrick2')
         BackButton.place(x=300, y=350)
         
         about.mainloop()
 
     # Setting up window
     window1 = tk.Tk()
-    window1.resizable(0, 0)
-    window1.geometry('350x180')
     window1.title("Snake Game")
+    window1.config(border=5)
+    window1.geometry('360x195+100+100')
+    window1.resizable(0, 0)
 
     # Play Button
-    PlayButton = tk.Button(window1, btn_params, text="Play", command=play)
-    PlayButton.place(x=0, y=0)
+    PlayButton = tk.Button(window1, btn_params, text="Play", command=play).pack()
 
     # About Button
-    AboutButton = tk.Button(window1, btn_params, text="About", command=about)
-    AboutButton.place(x=0, y=90)
+    AboutButton = tk.Button(window1, btn_params, text="About", command=about).pack()
 
     # Keeps Window Open
     window1.mainloop()
