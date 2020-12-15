@@ -7,11 +7,12 @@ def Play_TicTacToe():
     def play():
         # closing previous window
         window1.destroy()
+
         # main window
         root = Tk()
         root.title("Tic Tac Toe")
-        root.geometry("280x365")
         root.resizable(0, 0)
+        root.config(bg='peachpuff2', border=10)
 
         # Variables
         global turn, moves, winner
@@ -250,7 +251,6 @@ def Play_TicTacToe():
         Once the game is over, the board should be reset to play again.
 
         Developed by     : Siddhesh Agarwal
-        Contact (e-mail) : siddhesh.agarwal@gmail.com
         '''
 
         window1.destroy()
@@ -262,6 +262,7 @@ def Play_TicTacToe():
         screen = Text(about, height=30, width=120)
         screen.pack()
         screen.insert(END, text)
+        screen.config(bg='peachpuff2', border=20)
 
         BackButton = Button(about, btn_params, text="← Back", command=helper)
         BackButton.place(x=300, y=350)
@@ -277,21 +278,18 @@ def Play_TicTacToe():
         'font': ('arial', 20),
         'width': 20,
         'height': 2,
-        'activebackground': 'black'
+        'activebackground': 'yellow'
     }
 
     window1 = Tk()
-    window1.geometry('350x180')
-    window1.resizable(0, 0)
     window1.title("TIC TAC TOE")
-
-    # Play Button
-    PlayButton = Button(window1, btn_params, text="Play", command=play)
-    PlayButton.place(x=0, y=0)
-
-    # About Button
-    AboutButton = Button(window1, btn_params, text="About", command=about)
-    AboutButton.place(x=0, y=90)
+    window1.config(border=5)
+    window1.geometry('360x195+100+100')
+    window1.resizable(0, 0)
+    
+    # Play/about Buttons
+    PlayButton = Button(window1, btn_params, text="Play", command=play).pack()
+    AboutButton = Button(window1, btn_params, text="About", command=about).pack()
 
     # Keeps Window Open
     window1.mainloop()
