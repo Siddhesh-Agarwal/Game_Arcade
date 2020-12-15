@@ -4,7 +4,6 @@ from time import sleep
 import tkinter as tk
 
 def Play_Ping_Pong():
-
     # Button Parameters
     btn_params = {
     'padx': 16,
@@ -24,8 +23,17 @@ def Play_Ping_Pong():
         window = turtle.Screen()
         window.title("Ping Pong")
         window.bgcolor('green')
-        window.setup(800, 600)
+        window.setup(800+30, 600+30)
         window.tracer(0)
+
+        # Table
+        table = turtle.Turtle()
+        table.speed(0)
+        table.color('sky blue')
+        table.shape('square')
+        table.shapesize(stretch_len=40, stretch_wid=30)
+        table.penup()
+        table.goto(0, 0)
 
         # Paddle A
         paddle_a = turtle.Turtle()
@@ -60,6 +68,10 @@ def Play_Ping_Pong():
         # Killing window before starting new one
         window1.destroy()
 
+        # Score
+        score_a = 0
+        score_b = 0
+
         # Pen
         pen = turtle.Turtle()
         pen.speed(0)
@@ -68,10 +80,6 @@ def Play_Ping_Pong():
         pen.hideturtle()
         pen.goto(0, 260)
         pen.write("Player 1: 0  Player 2: 0", align='center', font=('Courier', 20, 'bold'))
-
-        # Score
-        score_a = 0
-        score_b = 0
 
         # delay
         delay = 0.1
@@ -210,9 +218,6 @@ def Play_Ping_Pong():
                 # Starting again
                 move()
 
-        # Keeps Screen Open
-        window.mainloop()
-
     # About
     def about():
         def helper():
@@ -234,9 +239,8 @@ def Play_Ping_Pong():
         The player A paddle can be controlled using the "w" and "s" keys for up and down respectively.
         The player B paddle can be controlled using the up arrow and down arrow for up and down respectively.
         
-        Developed by     : Siddhesh Agarwal
-        Contact (e-mail) : siddhesh.agarwal@gmail.com
-        Repository link  : https://github.com/Siddhesh-Agarwal/Ping_pong
+        Developed by: Siddhesh Agarwal
+        e-mail      : siddhesh.agarwal@gmail.com
         '''
         
         window1.destroy()
@@ -248,23 +252,24 @@ def Play_Ping_Pong():
         screen = tk.Text(about, height=30, width=120)
         screen.pack()
         screen.insert(tk.END, text)
+        screen.config(bg='brown', borderwidth=20, border=20)
         
         BackButton = tk.Button(about, btn_params, text="← Back", command=helper)
-        BackButton.place(x=300, y=350)
+        BackButton.place(x=300, y=300)
+        BackButton.config(bg='gold2')
 
         about.mainloop()
 
     # Setting up window
     window1 = tk.Tk()
     window1.title("PING PONG")
+    window1.geometry('360x195+100+100')
+    window1.resizable(0, 0)
+    window1.config(border=5)
 
-    # Play Button
-    PlayButton = tk.Button(window1, btn_params, text="Play",  command=play)
-    PlayButton.grid(row=0, column=0)
-
-    # About Button
-    AboutButton = tk.Button(window1, btn_params, text="About", command=about)
-    AboutButton.grid(row=1, column=0)
+    # Play/About Buttons
+    PlayButton = tk.Button(window1, btn_params, text="Play",  command=play).pack()
+    AboutButton = tk.Button(window1, btn_params, text="About", command=about).pack()
 
     # Keeps Window Open
     window1.mainloop()
