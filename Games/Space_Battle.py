@@ -392,13 +392,13 @@ def Play_Space_Battle():
         'padx': 16,
         'pady': 1,
         'bd': 4,
-        'fg': 'black',
-        'bg': 'gainsboro',
+        'fg': 'yellow',
+        'bg': 'gray2',
         'font': ('arial', 20),
         'width': 20,
         'height': 2,
-        'relief': 'groove',
-        'activebackground': 'yellow'
+        'relief': 'flat',
+        'activebackground': 'red2'
     }
 
     def about():
@@ -425,7 +425,6 @@ def Play_Space_Battle():
         Left click in the place where you want to deploy your ship in the screen.
 
         Developed by     : Siddhesh Agarwal
-        Contact (e-mail) : siddhesh.agarwal@gmail.com
         """
 
         window1.destroy()
@@ -436,6 +435,7 @@ def Play_Space_Battle():
 
         screen = Text(about, height=30, width=120)
         screen.pack()
+        screen.config(bg='gray63', border=20)
         screen.insert(END, text)
 
         BackButton = Button(about, btn_params, text="← Back", command=helper)
@@ -445,17 +445,17 @@ def Play_Space_Battle():
 
     # Setting up window
     window1 = Tk()
-    window1.geometry('350x180')
     window1.resizable(0, 0)
     window1.title("SPACE BATTLE")
+    window1.config(bg='gray19', border=5)
 
     # Play Button
     PlayButton = Button(window1, btn_params, text="Play", command=play)
-    PlayButton.place(x=0, y=0)
+    PlayButton.pack()
 
     # About Button
     AboutButton = Button(window1, btn_params, text="About", command=about)
-    AboutButton.place(x=0, y=90)
+    AboutButton.pack()
 
     # Keeps Window Open
     window1.mainloop()
