@@ -15,13 +15,14 @@ This project is a game arcade that contains the following games:
 
 To run program, execute the [Run_Me.py](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Run_Me.py) file after downloading the whole program.
 On execution, the user will see a menu like the one below: <br>
+
 ![Game Menu](Pictures/menu.jpg) <br>
 
 On selecting the game the user is interested in playing, another window will open. Say the user decides to play snake game, then a menu like this will open: <br>
 
-![Snake Game Menu](Pictures/sub_menu.jpg)
+![Snake Game Menu](Pictures/sub_menu.jpg) <br>
 
-<br><hr>
+<hr>
 
 ## [Ping Pong](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Ping_Pong.py)
 
