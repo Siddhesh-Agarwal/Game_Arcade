@@ -13,9 +13,11 @@ This project is a game arcade that contains the following games:
 | Space Battle | A Space battle game which is all about the formations of your spaceships. |
 | Tic-Tac-Toe | Also called as Noughts and Crosses, this game is the best timepass for kids even after several decades. |
 
+To run program, execute the [Run_Me.py](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Run_Me.py) file after downloading the whole program.
+
 <br><hr>
 
-## Ping Pong
+## [Ping Pong](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Ping_Pong.py)
 
 **AIM:**
 The objective of the game is to score 110 points before the other player.
@@ -33,7 +35,7 @@ A player can lose if the opponent player scores 110 points before one does.
 
 <br><hr>
 
-## Snake Game
+## [Snake Game](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Snake_Game.py)
 
 **AIM:**
 The objective of the game is to collect as many apples as possible and create a maximum score.
@@ -54,7 +56,7 @@ The snake can be controlled using the arrow keys(`Up key`, `Right key`, `Down ke
 
 <br><hr>
 
-## Space Battle
+## [Space Battle](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Space_Battle.py)
 
 **AIM:**
 The main objective of the game is to eliminate enemy spaceships while making sure that you do not run out of your spaceships on the battlefield.
@@ -73,7 +75,7 @@ Left click in the place where you want to deploy your ship in the screen.
 
 <br><hr>
 
-## Tic-Tac-Toe
+## [Tic-Tac-Toe](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Tic_Tac_Toe.py)
 
 **AIM:**
 The goal of the game is for players to position their marks so that they make a continuous line of three cells vertically, horizontally, or diagonally.
@@ -93,5 +95,5 @@ If none of the players are successful in makingt a line of 3 cells vertically, h
 
 ## Contact
 
-**Developed by:** Siddhesh Agarwal <br>
+**Developed by:** [Siddhesh Agarwal](https://github.com/Siddhesh-Agarwal)
 **E-mail:** siddhesh.agarwal@gmail.com
