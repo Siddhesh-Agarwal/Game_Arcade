@@ -41,7 +41,7 @@ A player can lose if the opponent player scores 110 points before one does.
 *Player A*: can controll his/her using the `w` and `s` keys for up and down respectively. <br>
 *Player B:* can controll his/her using the `up key` and `down key` for up and down respectively.
 
-<br><hr>
+<hr>
 
 ## [Snake Game](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Snake_Game.py)
 
@@ -62,7 +62,7 @@ The player can get out in the following ways:<br>
 **CONTROL:**<br>
 The snake can be controlled using the arrow keys(`Up key`, `Right key`, `Down key` and `Left key`)
 
-<br><hr>
+<hr>
 
 ## [Space Battle](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Space_Battle.py)
 
@@ -84,7 +84,7 @@ You win the game if you destroy all the enemy spaceships.
 Left click in the place where you want to deploy your ship in the screen.
 
 
-<br><hr>
+<hr>
 
 ## [Tic-Tac-Toe](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Tic_Tac_Toe.py)
 
@@ -103,7 +103,7 @@ If none of the players are successful in makingt a line of 3 cells vertically, h
 * Players are required to alternate turns and click on the box they would like to fill.
 * Once the game is over, the board should be reset to play again.
 
-<br><hr>
+<hr>
 
 ## Contact
 
