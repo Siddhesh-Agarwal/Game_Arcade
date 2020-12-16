@@ -1,4 +1,4 @@
-# Game_Arcade
+# [Game Arcade](https://github.com/Siddhesh-Agarwal/Game_Arcade)
 Game Arcade, consisting of several games, made in python 3
 
 <br><hr>
