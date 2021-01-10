@@ -38,8 +38,8 @@ The score is incremented by 10 for every miss by the opponent.
 A player can lose if the opponent player scores 110 points before one does.
 
 **CONTROL:**<br>
-*Player A*: can controll his/her using the `w` and `s` keys for up and down respectively. <br>
-*Player B:* can controll his/her using the `up key` and `down key` for up and down respectively.
+*Player A*: can control his/her using the `w` and `s` keys for up and down respectively. <br>
+*Player B:* can control his/her using the `up key` and `down key` for up and down respectively.
 
 <hr>
 
@@ -75,7 +75,7 @@ The main objective of the game is to eliminate enemy spaceships while making sur
 You can lose the game if:
 
 1. You run out of spaceships while there are still opponent spaceships on the battlefront.
-2. Your spaceships on the battleground are destroyed and the on-field spaceships are 0 (though you maystill have spare ships).
+2. Your spaceships on the battleground are destroyed and the on-field spaceships are 0 (though you may still have spare ships).
 
 **WIN:**<br>
 You win the game if you destroy all the enemy spaceships.
@@ -97,7 +97,7 @@ The goal of the game is for players to position their marks so that they make a 
 If one player makes a line of 3 cells vertically, horizontally or diagonally, then that player wins the game.
 
 **DRAW:**<br>
-If none of the players are successful in makingt a line of 3 cells vertically, horizontally or diagonally even after all the 9 cells have been used up, The game ends in a draw (neither players win/lose).
+If none of the players are successful in making a line of 3 cells vertically, horizontally or diagonally even after all the 9 cells have been used up, The game ends in a draw (neither players win/lose).
 
 **HOW TO PLAY:**<br>
 * Players are required to alternate turns and click on the box they would like to fill.
