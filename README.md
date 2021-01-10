@@ -1,8 +1,7 @@
 # [Game Arcade](https://github.com/Siddhesh-Agarwal/Game_Arcade)
 Game Arcade, consisting of several games, made in python 3
-
-<hr>
-
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+_______________________________________________________________________________________________
 ## Introduction
 
 This project is a game arcade that contains the following games:
@@ -21,9 +20,7 @@ On execution, the user will see a menu like the one below: <br>
 On selecting the game the user is interested in playing, another window will open. Say the user decides to play snake game, then a menu like this will open: <br>
 
 ![Snake Game Menu](Pictures/sub_menu.jpg) <br>
-
-<hr>
-
+_______________________________________________________________________________________________
 ## [Ping Pong](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Ping_Pong.py)
 
 ![Ping Pong](Pictures/Ping_pong.jpg)
@@ -40,9 +37,7 @@ A player can lose if the opponent player scores 110 points before one does.
 **CONTROL:**<br>
 *Player A*: can control his/her using the `w` and `s` keys for up and down respectively. <br>
 *Player B:* can control his/her using the `up key` and `down key` for up and down respectively.
-
-<hr>
-
+_______________________________________________________________________________________________
 ## [Snake Game](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Snake_Game.py)
 
 ![Snake Game](Pictures/snake_game.jpg)
@@ -61,9 +56,7 @@ The player can get out in the following ways:<br>
 
 **CONTROL:**<br>
 The snake can be controlled using the arrow keys(`Up key`, `Right key`, `Down key` and `Left key`)
-
-<hr>
-
+_______________________________________________________________________________________________
 ## [Space Battle](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Space_Battle.py)
 
 ![Space Battle](Pictures/Space_Battle.jpg)
@@ -82,10 +75,7 @@ You win the game if you destroy all the enemy spaceships.
 
 **CONTROL:**<br>
 Left click in the place where you want to deploy your ship in the screen.
-
-
-<hr>
-
+_______________________________________________________________________________________________
 ## [Tic-Tac-Toe](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Tic_Tac_Toe.py)
 
 ![Tic Tac Toe](Pictures/TicTacToe_gameplay.jpg)
@@ -102,9 +92,7 @@ If none of the players are successful in making a line of 3 cells vertically, ho
 **HOW TO PLAY:**<br>
 * Players are required to alternate turns and click on the box they would like to fill.
 * Once the game is over, the board should be reset to play again.
-
-<hr>
-
+_______________________________________________________________________________________________
 ## Contact
 
 **Developed by:** [Siddhesh Agarwal](https://github.com/Siddhesh-Agarwal) <br>
