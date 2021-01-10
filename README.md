@@ -1,6 +1,9 @@
 # [Game Arcade](https://github.com/Siddhesh-Agarwal/Game_Arcade)
-Game Arcade, consisting of several games, made in python 3 <br>
+Game Arcade, consisting of several games, made in python 3
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 _______________________________________________________________________________________________
 ## Introduction
 
