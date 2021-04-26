@@ -4,7 +4,7 @@ import Games.Space_Battle as SB
 import Games.Tic_Tac_Toe as TTT
 from tkinter import *
 
-#Button Parameters
+# Button Parameters
 btn_params = {
     'padx': 16,
     'pady': 1,
@@ -17,12 +17,14 @@ btn_params = {
     'activebackground': 'yellow'
 }
 
+# Can be called to change mode to dark
 def dark():
     global btn_params
     btn_params['relief'] = 'flat'
     btn_params['bg'] = "#121212"
     btn_params['fg'] = "#0000FF"
-
+    
+# Can be called to change mode to light
 def light():
     global btn_params
     btn_params['relief'] = 'raised'
@@ -110,7 +112,7 @@ def Info(window: Tk): #! Doesn't contain the details of each game but only the l
     about.mainloop()
 
 # Main menu
-def MainMenu():
+def main():
     global mainroot
     mainroot = Tk()
     mainroot.title('Game Arcade')
@@ -128,4 +130,4 @@ def MainMenu():
 ##     Driver  Program     ##
 #############################
 if __name__ == '__main__':
-    MainMenu()
+    main()
