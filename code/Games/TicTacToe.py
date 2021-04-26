@@ -1,4 +1,4 @@
-# Game_Arcade/Games/Tic_Tac_Toe.py
+# Game_Arcade/Games/TicTacToe.py
 from tkinter import *
 from tkinter import messagebox
 from random import choice
