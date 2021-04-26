@@ -1,4 +1,4 @@
-# Game_Arcade/Games/Space_Battle.py
+# Game_Arcade/Games/SpaceBattle.py
 import turtle
 import random
 import math
