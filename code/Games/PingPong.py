@@ -1,4 +1,4 @@
-# Game_Arcade/Games/Ping_Pong.py
+# Game_Arcade/Games/PingPong.py
 import turtle
 from time import sleep
 import tkinter as tk
