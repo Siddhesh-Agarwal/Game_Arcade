@@ -1,4 +1,4 @@
-# Game_Arcade/Games/Snake_Game.py
+# Game_Arcade/Games/SnakeGame.py
 import tkinter as tk
 import turtle
 from random import randrange
