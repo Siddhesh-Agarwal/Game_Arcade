@@ -1,5 +1,6 @@
 # [Game Arcade](https://github.com/Siddhesh-Agarwal/Game_Arcade)
 Game Arcade, consisting of several games, made in python 3
+
 _______________________________________________________________________________________________
 ## Introduction
 
@@ -11,7 +12,7 @@ This project is a game arcade that contains the following games:
 | Space Battle | A Space battle game which is all about the formations of your spaceships. |
 | Tic-Tac-Toe | Also called as Noughts and Crosses, this game is the best timepass for kids even after several decades. |
 
-To run program, execute the [Run_Me.py](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Run_Me.py) file after downloading the whole program.
+To run program, execute the [main.py](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/code/main.py) file after downloading the whole program.
 On execution, the user will see a menu like the one below: <br>
 
 ![Game Menu](Pictures/menu.jpg) <br>
@@ -20,7 +21,7 @@ On selecting the game the user is interested in playing, another window will ope
 
 ![Snake Game Menu](Pictures/sub_menu.jpg) <br>
 _______________________________________________________________________________________________
-## [Ping Pong](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Ping_Pong.py)
+## [Ping Pong](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/code/Games/PingPong.py)
 
 ![Ping Pong](Pictures/Ping_pong.jpg)
 
@@ -37,7 +38,7 @@ A player can lose if the opponent player scores 110 points before one does.
 *Player A*: can control his/her using the `w` and `s` keys for up and down respectively. <br>
 *Player B:* can control his/her using the `up key` and `down key` for up and down respectively.
 _______________________________________________________________________________________________
-## [Snake Game](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Snake_Game.py)
+## [Snake Game](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/code/Games/SnakeGame.py)
 
 ![Snake Game](Pictures/snake_game.jpg)
 
@@ -56,7 +57,7 @@ The player can get out in the following ways:<br>
 **CONTROL:**<br>
 The snake can be controlled using the arrow keys(`Up key`, `Right key`, `Down key` and `Left key`)
 _______________________________________________________________________________________________
-## [Space Battle](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Space_Battle.py)
+## [Space Battle](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/code/Games/SpaceBattle.py)
 
 ![Space Battle](Pictures/Space_Battle.jpg)
 
@@ -75,7 +76,7 @@ You win the game if you destroy all the enemy spaceships.
 **CONTROL:**<br>
 Left click in the place where you want to deploy your ship in the screen.
 _______________________________________________________________________________________________
-## [Tic-Tac-Toe](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/Games/Tic_Tac_Toe.py)
+## [Tic-Tac-Toe](https://github.com/Siddhesh-Agarwal/Game_Arcade/blob/main/code/Games/TicTacToe.py)
 
 ![Tic Tac Toe](Pictures/TicTacToe_gameplay.jpg)
 
