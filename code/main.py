@@ -4,7 +4,9 @@ import Games.Space_Battle as SB
 import Games.Tic_Tac_Toe as TTT
 from tkinter import *
 
-# Button Parameters
+#############################
+##    Button Parameters    ##
+#############################
 btn_params = {
     'padx': 16,
     'pady': 1,
@@ -16,27 +18,15 @@ btn_params = {
     'height': 2,
     'activebackground': 'yellow'
 }
-
-# Can be called to change mode to dark
-def dark():
-    global btn_params
-    btn_params['relief'] = 'flat'
-    btn_params['bg'] = "#121212"
-    btn_params['fg'] = "#0000FF"
     
-# Can be called to change mode to light
-def light():
-    global btn_params
-    btn_params['relief'] = 'raised'
-    btn_params['bg'] = "#fbfbfb"
-    btn_params['fg'] = "#121212"
-
+#############################
+##         Submenu         ##
+#############################
 # takes Back to Main menu
 def Back(window):
     window.destroy()
-    MainMenu()
-
-# Opens Submenu with further options
+    main()
+    
 def Play(game):
     def helper():
         global about
@@ -83,8 +73,10 @@ def Play(game):
     btn3 = Button(subroot, **btn_params, text='Back to Main Menu', command=lambda: Back(subroot)).pack()       # Back button
 
     subroot.mainloop()
-
-# Information of main app
+    
+#############################
+##       Information       ##
+#############################
 def Info(window: Tk): #! Doesn't contain the details of each game but only the list
     text = '''GAME ARCADE
     This Project contains 4 games:
@@ -110,8 +102,45 @@ def Info(window: Tk): #! Doesn't contain the details of each game but only the l
     BackButton.pack(anchor=S)
         
     about.mainloop()
+    
+#############################
+##      Change  Theme      ##
+#############################
+def Apply_changes():
+    global settings_wn
+    settings_wn.destroy()
+    main()
 
-# Main menu
+# Dark mode
+def dark():
+    global btn_params
+    btn_params['relief'] = 'flat'
+    btn_params['bg'] = "#121212"
+    btn_params['fg'] = "#0000FF"
+    Apply_changes()
+
+# Light mode
+def light():
+    global btn_params
+    btn_params['relief'] = 'raised'
+    btn_params['bg'] = "#fbfbfb"
+    btn_params['fg'] = "#121212"
+    Apply_changes()
+    
+# Settings window
+def settings():
+    mainroot.destroy()
+
+    global settings_wn
+    settings_wn = Tk()
+    mode_txt = Label(settings_wn, text='Mode', font=('Arial', 20, 'bold')).pack()
+    LightMode = Button(settings_wn, **btn_params, text='Light', command=light).pack()
+    DarkMode = Button(settings_wn, **btn_params, text='Dark Mode', command=dark).pack()
+    settings_wn.mainloop()
+    
+#############################
+##        Main Menu        ##
+#############################
 def main():
     global mainroot
     mainroot = Tk()
@@ -123,7 +152,7 @@ def main():
     btn3 = Button(mainroot, **btn_params, text='Space Battle', command=lambda: Play('Space Battle')).pack()
     btn4 = Button(mainroot, **btn_params, text='Tic Tac Toe', command=lambda: Play('Tic Tac Toe')).pack()
     info = Button(mainroot, **btn_params, text='Information', command=lambda: Info(mainroot)).pack()
-
+    settings_btn = Button(mainroot, **btn_params, text='Settings', command=settings).pack()
     mainroot.mainloop()
 
 #############################
