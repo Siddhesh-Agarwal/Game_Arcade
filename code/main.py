@@ -4,6 +4,7 @@ import Games.Space_Battle as SB
 import Games.Tic_Tac_Toe as TTT
 from tkinter import *
 
+
 #############################
 ##    Button Parameters    ##
 #############################
@@ -18,7 +19,8 @@ btn_params = {
     'height': 2,
     'activebackground': 'yellow'
 }
-    
+
+
 #############################
 ##         Submenu         ##
 #############################
@@ -26,7 +28,7 @@ btn_params = {
 def Back(window):
     window.destroy()
     main()
-    
+
 def Play(game):
     def helper():
         global about
@@ -58,9 +60,9 @@ def Play(game):
 
         BackButton = Button(about, btn_params, text="← Back", command=helper)
         BackButton.pack(anchor=S)
-            
+
         about.mainloop()
-        
+
     global mainroot
     mainroot.destroy()
 
@@ -73,36 +75,41 @@ def Play(game):
     btn3 = Button(subroot, **btn_params, text='Back to Main Menu', command=lambda: Back(subroot)).pack()       # Back button
 
     subroot.mainloop()
-    
+
+
 #############################
 ##       Information       ##
 #############################
-def Info(window: Tk): #! Doesn't contain the details of each game but only the list
+def Info():
+    def Back():
+        about.destroy()
+        mainroot.deiconify()
+
     text = '''GAME ARCADE
     This Project contains 4 games:
     1) Ping Pong (2 player)
     2) Snake game (single player)
     3) Space battle (single player)
     4) Tic Tac Toe (2 player)
-
     Developed by     : Siddhesh Agarwal
     '''
 
-    window.destroy()
-
+    global mainroot, about
     about = Tk()
+    mainroot.withdraw()
     about.resizable(0, 0)
-    about.title("About")
+    about.title("About")    
 
     screen = Text(about, height=10, width=50)
     screen.pack()
     screen.insert(END, text)
 
-    BackButton = Button(about, btn_params, text="← Back", command=lambda: Back(about))
+    BackButton = Button(about, btn_params, text="← Back", command=Back)
     BackButton.pack(anchor=S)
         
     about.mainloop()
-    
+
+
 #############################
 ##      Change  Theme      ##
 #############################
@@ -129,15 +136,17 @@ def light():
     
 # Settings window
 def settings():
+    global settings_wn, mainroot
+    settings_wn = Tk()
     mainroot.destroy()
 
-    global settings_wn
-    settings_wn = Tk()
     mode_txt = Label(settings_wn, text='Mode', font=('Arial', 20, 'bold')).pack()
     LightMode = Button(settings_wn, **btn_params, text='Light', command=light).pack()
     DarkMode = Button(settings_wn, **btn_params, text='Dark Mode', command=dark).pack()
+
     settings_wn.mainloop()
-    
+
+
 #############################
 ##        Main Menu        ##
 #############################
@@ -151,9 +160,10 @@ def main():
     btn2 = Button(mainroot, **btn_params, text='Snake Game', command=lambda: Play('Snake Game')).pack()
     btn3 = Button(mainroot, **btn_params, text='Space Battle', command=lambda: Play('Space Battle')).pack()
     btn4 = Button(mainroot, **btn_params, text='Tic Tac Toe', command=lambda: Play('Tic Tac Toe')).pack()
-    info = Button(mainroot, **btn_params, text='Information', command=lambda: Info(mainroot)).pack()
+    info = Button(mainroot, **btn_params, text='Information', command=Info).pack()
     settings_btn = Button(mainroot, **btn_params, text='Settings', command=settings).pack()
     mainroot.mainloop()
+
 
 #############################
 ##     Driver  Program     ##
