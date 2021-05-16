@@ -157,12 +157,22 @@ def main():
     mainroot.title('Game Arcade')
     mainroot.resizable(0, 0)
 
+    menubar = Menu(mainroot, tearoff=0)
+    mainroot.config(menu=menubar)
+
+    SetMenu = Menu(menubar, tearoff=0)
+    SetMenu.add_command(label='Settings', command=settings)
+    menubar.add_cascade(label='Settings', menu=SetMenu)
+
+    InfoMenu = Menu(menubar, tearoff=0)
+    InfoMenu.add_command(label='Information', command=Info)
+    menubar.add_cascade(label='Info', menu=InfoMenu)
+
     btn1 = Button(mainroot, **btn_params, text='Ping Pong', command=lambda: Play('Ping Pong')).pack()
     btn2 = Button(mainroot, **btn_params, text='Snake Game', command=lambda: Play('Snake Game')).pack()
     btn3 = Button(mainroot, **btn_params, text='Space Battle', command=lambda: Play('Space Battle')).pack()
     btn4 = Button(mainroot, **btn_params, text='Tic Tac Toe', command=lambda: Play('Tic Tac Toe')).pack()
-    info = Button(mainroot, **btn_params, text='Information', command=Info).pack()
-    settings_btn = Button(mainroot, **btn_params, text='Settings', command=settings).pack()
+    
     mainroot.mainloop()
 
 
